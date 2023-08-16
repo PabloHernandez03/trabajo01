@@ -50,23 +50,36 @@ h4{
     font-size: 2.8rem;
 }
 p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 img{
     max-width: 100%;
 }
-ul{
-    list-style: none;
-    padding: 0;
-    margin-bottom: 4rem;
-}
 .contenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    overflow: scroll;
+    justify-items: center;
     position: fixed;
     height: 100%;
     width: 100%;
+}
+.sobre-mi{
+    display:flex;
+    gap: 5rem;
+    margin-top: 6rem;
+}
+.sobre-mi h1,
+.sobre-mi p{
+    text-align: center;
+}
+.sobre-mi h1{
+        margin-bottom: 0;
+}
+.idiomas-referencias{
+    display: flex;
+}
+.idiomas-referencias div{
+    width: 50%;
 }
 span{
     color: var(--azul);
@@ -82,6 +95,7 @@ img{
 .redes{
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 .icono{
     width: 52px;
@@ -101,13 +115,14 @@ img{
     left: 11px;
 }
 .desarrollo{
-    width: 30%;
+    width: 50%;
 }
 .habilidades h4,
 .tecnologias h4,
 .idiomas-referencias h4{
     margin-top: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 .atributo p{
     margin: 0;
@@ -142,19 +157,27 @@ img{
         overflow: scroll;
         justify-items: center;
     }
+    .sobre-mi{
+        display: grid;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .sobre-mi h1{
+        margin: 0;
+    }
+    .sobre-mi div{
+        grid-row: 2/1;
+    }
     .desarrollo{
-        width: 100%;
+        width: 90%;
     }
     .redes{
-        justify-content: left;
+        justify-content: center;
     }
     .icono{
         margin-right: 3rem;
     }
-    .idiomas-referencias{
-        display: flex;
-    }
-    .idiomas-referencias div{
-        width: 50%;
+    .icono:nth-child(3){
+        margin-right: 0rem;
     }
 }
