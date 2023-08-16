@@ -62,18 +62,20 @@ img{
     position: fixed;
     height: 100%;
     width: 100%;
+    gap: 1rem;
 }
 .sobre-mi{
     display:flex;
     gap: 5rem;
     margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 .sobre-mi h1,
 .sobre-mi p{
     text-align: center;
 }
 .sobre-mi h1{
-        margin-bottom: 0;
+    margin-bottom: 0;
 }
 .idiomas-referencias{
     display: flex;
@@ -161,6 +163,7 @@ img{
         display: grid;
         gap: 2rem;
         margin-top: 2rem;
+        margin-bottom: 0;
     }
     .sobre-mi h1{
         margin: 0;
